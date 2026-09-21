@@ -115,6 +115,19 @@ Step 3: Run the Script
   - HUD & UI Architecture: Visual design, 10 modular layouts, Shadow DOM
     structure, Xbox dashboard menu, Web Audio SFX, bilingual system, and
     automation pipeline developed by doomec.
+    
+## 🌐 Language Notice (Why is it in Russian on first launch?)
+
+> **Note:** This project was originally created for personal use, which is why the interface defaults to **Russian** when you run the script for the first time.
+>
+> **How to switch to English (in 2 clicks):**
+> 1. Click the **Gear icon (⚙️)** in the top-right corner of the overlay to open **Settings**.
+> 2. Find the **Interface Language (Язык интерфейса)** setting.
+> 3. Click **`🇬🇧 English`** and then hit **Save (Сохранить)** at the bottom.
+> 
+> Your language choice is saved locally and will remain in English for all future launches!
+
+---
 
 ⚠️ Disclaimer
 
