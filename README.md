@@ -1,3 +1,6 @@
+
+
+```markdown
 # 🎮 Discord Quest Control Panel (HUD & Automation)
 
 A modular, feature-rich HUD and automation toolkit for completing Discord Quests with interactive visuals, custom layouts, audio effects, and cyber voice feedback.
