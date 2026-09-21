@@ -1,5 +1,3 @@
-
-
 # 🎮 Discord Quest Control Panel (HUD & Automation)
 
 A modular, feature-rich HUD and automation toolkit for completing Discord Quests with interactive visuals, custom layouts, audio effects, and cyber voice feedback.
@@ -10,14 +8,10 @@ A modular, feature-rich HUD and automation toolkit for completing Discord Quests
 
 Please note that certain features depend on third-party APIs and client capabilities:
 
-- 🎙️ **Cyber Voice Assistant (Experimental):** Relies on the browser/Electron `window.speechSynthesis` API. Depending on your OS, Discord client build, or system permissions, voice output may not work consistently across all environments.
+- 🎙️ **Cyber Voice Assistant (Experimental):** Relies on the browser/Electron `window.speechSynthesis` API. Depending on your OS, Discord client build, or system sound permissions, voice output may not work consistently across all environments.
 - 🎁 **Auto-Claim Rewards (Experimental):** The script attempts to automatically redeem promo codes via Discord API endpoints upon quest completion. Because Discord frequently changes reward endpoints, adds CAPTCHAs, or enforces platform-specific checks, automatic claiming may not work for every quest. If an auto-claim fails, you can always claim the reward manually from Discord's official Quest tab.
 
 ---
-## 📸 Preview
-<img width="475" height="312" alt="image" src="https://github.com/user-attachments/assets/7df941f8-5785-4fdf-9b76-f0fbbc52fbea" />
-<img width="1028" height="495" alt="image" src="https://github.com/user-attachments/assets/f9d1bf3d-0e44-45d9-a279-05963494eff8" />
-
 
 ## ✨ Features
 
@@ -69,23 +63,36 @@ Please note that certain features depend on third-party APIs and client capabili
 > Tasks like `PLAY_ON_DESKTOP` and `STREAM_ON_DESKTOP` require native desktop Discord modules (`DiscordNative`). Because standard Discord disables Developer Tools by default to prevent token-stealing exploits, it is recommended to use **Discord PTB** (Public Test Build).
 
 ### Step 1: Download Discord PTB
-Download and install the official Public Test Build:
-- **Windows:** [Download Discord PTB (Official)](https://discord.com/api/download/ptb?platform=win)
-- **macOS:** [Download Discord PTB for Mac](https://discord.com/api/download/ptb?platform=osx)
 
----
+Choose the installer for your operating system:
 
-### Step 2: Enable Console (DevTools)
-1. Completely close **Discord PTB** (Right-click the tray icon near your clock ➔ **Quit Discord PTB**).
-2. Open the Run dialog: press **`Win + R`**.
-3. Type `%appdata%\discordptb` and hit **Enter** *(on macOS: `~/Library/Application Support/discordptb/`)*.
-4. Open the `settings.json` file with Notepad or any text editor.
-5. Add the following line inside the curly brackets `{ ... }`:
-   ```json
-   "DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true
+- **Windows:** 📦 [Download Discord PTB (.exe)](https://discord.com/api/download/ptb?platform=win)
+- **macOS:** 🍎 [Download Discord PTB (.dmg)](https://discord.com/api/download/ptb?platform=osx)
+- **Linux (Debian / Ubuntu / Mint / Pop!_OS):** 🐧 [Download Discord PTB (.deb)](https://discord.com/api/download/ptb?platform=linux&format=deb)
+  ```bash
+  sudo apt install ./discord-ptb.deb
 
-(Ensure valid JSON formatting: add a comma , to previous lines if necessary). 6.
-Save the file (Ctrl + S) and start Discord PTB.
+  - Linux (Arch Linux / Manjaro / Generic): 📁 Download Discord PTB (.tar.gz
+    portable)
+    (or install via AUR: yay -S discord-ptb)
+
+Step 2: Enable Console (DevTools)
+
+1.  Completely exit Discord PTB:
+      - Windows: Right-click the tray icon near the taskbar clock ➔ Quit Discord
+        PTB.
+      - Linux: Run killall DiscordPTB or close it from your system tray.
+2.  Open the configuration file settings.json:
+      - Windows: Press Win + R, type %appdata%\discordptb and press Enter. Open
+        settings.json with Notepad.
+      - Linux: Open terminal and run:
+        nano ~/.config/discordptb/settings.json
+      - macOS: Open ~/Library/Application Support/discordptb/settings.json.
+3.  Add the following line inside the curly brackets { ... }:
+    "DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true
+    (Ensure valid JSON formatting: add a comma , to preceding lines if
+    necessary).
+4.  Save the file and launch Discord PTB.
 
 Step 3: Run the Script
 
@@ -94,8 +101,8 @@ Step 3: Run the Script
 2.  Navigate to the Console tab.
     Note: If Discord warns you with “Hold up! If someone told you to copy/paste
     something...”, type allow pasting into the console and press Enter.
-3.  Paste the entire code from quest-control-panel.js into the console and press
-    Enter.
+3.  Open quest-control-panel.js, copy the entire code, paste it into the
+    console, and press Enter.
 
 ⚙️ Controls & Shortcuts
 
@@ -108,6 +115,21 @@ Step 3: Run the Script
 | **Close Overlay**        | Click the **Cross icon (✕)** or invoke cleanup hook        |
 | **Dismiss Dropdowns**    | Press **`Escape`** or click outside the menu               |
 
+🌐 Language Notice (Why is it in Russian on first launch?)
+
+Note: This project was originally created for personal use, which is why the
+interface defaults to Russian when you run the script for the first time.
+
+How to switch to English (in 2 clicks):
+
+1.  Click the Gear icon (⚙️) in the top-right corner of the overlay to open
+    Settings.
+2.  Find the Interface Language (Язык интерфейса) setting.
+3.  Click 🇬🇧 English and then hit Save (Сохранить) at the bottom.
+
+Your language choice is saved locally and will remain in English for all future
+launches!
+
 💖 Credits & Acknowledgments
 
   - Discord Webpack Research: Core store hook methodology and quest tracking
@@ -115,25 +137,11 @@ Step 3: Run the Script
     modding community.
   - HUD & UI Architecture: Visual design, 10 modular layouts, Shadow DOM
     structure, Xbox dashboard menu, Web Audio SFX, bilingual system, and
-    automation pipeline developed by doomeec.
-    
-## 🌐 Language Notice (Why is it in Russian on first launch?)
-
-> **Note:** This project was originally created for personal use, which is why the interface defaults to **Russian** when you run the script for the first time.
->
-> **How to switch to English (in 2 clicks):**
-> 1. Click the **Gear icon (⚙️)** in the top-right corner of the overlay to open **Settings**.
-> 2. Find the **Interface Language (Язык интерфейса)** setting.
-> 3. Click **`🇬🇧 English`** and then hit **Save (Сохранить)** at the bottom.
-> 
-> Your language choice is saved locally and will remain in English for all future launches!
-
----
+    automation pipeline developed by doomec.
 
 ⚠️ Disclaimer
 
 This script is created strictly for educational and research purposes. Using
 third-party scripts or modifying the Discord client violates the Discord Terms
 of Service. Use at your own discretion.
-
 
