@@ -14,6 +14,10 @@ Please note that certain features depend on third-party APIs and client capabili
 - 🎁 **Auto-Claim Rewards (Experimental):** The script attempts to automatically redeem promo codes via Discord API endpoints upon quest completion. Because Discord frequently changes reward endpoints, adds CAPTCHAs, or enforces platform-specific checks, automatic claiming may not work for every quest. If an auto-claim fails, you can always claim the reward manually from Discord's official Quest tab.
 
 ---
+## 📸 Preview
+<img width="475" height="312" alt="image" src="https://github.com/user-attachments/assets/7df941f8-5785-4fdf-9b76-f0fbbc52fbea" />
+<img width="1028" height="495" alt="image" src="https://github.com/user-attachments/assets/f9d1bf3d-0e44-45d9-a279-05963494eff8" />
+
 
 ## ✨ Features
 
@@ -111,7 +115,7 @@ Step 3: Run the Script
     modding community.
   - HUD & UI Architecture: Visual design, 10 modular layouts, Shadow DOM
     structure, Xbox dashboard menu, Web Audio SFX, bilingual system, and
-    automation pipeline developed by doomec.
+    automation pipeline developed by doomeec.
     
 ## 🌐 Language Notice (Why is it in Russian on first launch?)
 
