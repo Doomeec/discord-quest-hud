@@ -68,16 +68,16 @@ Please note that certain features depend on third-party APIs and client capabili
 
 Choose the installer for your operating system:
 
+### Step 1: Download Discord PTB
+
+Choose the installer for your operating system:
+
 - **Windows:** 📦 [Download Discord PTB (.exe)](https://discord.com/api/download/ptb?platform=win)
 - **macOS:** 🍎 [Download Discord PTB (.dmg)](https://discord.com/api/download/ptb?platform=osx)
-- **Linux (Debian / Ubuntu / Mint / Pop!_OS):** 🐧 [Download Discord PTB (.deb)](https://discord.com/api/download/ptb?platform=linux&format=deb)
-  ```bash
-  sudo apt install ./discord-ptb.deb
+- **Linux (Debian / Ubuntu / Mint / Pop!_OS):** 🐧 [Download Discord PTB (.deb)](https://discord.com/api/download/ptb?platform=linux&format=deb) — install via `sudo apt install ./discord-ptb.deb`
+- **Linux (Arch Linux / Manjaro / Generic):** 📁 [Download Discord PTB (.tar.gz portable)](https://discord.com/api/download/ptb?platform=linux&format=tar.gz) — or via AUR: `yay -S discord-ptb`
 
-  - Linux (Arch Linux / Manjaro / Generic): 📁 Download Discord PTB (.tar.gz
-    portable)
-    (or install via AUR: yay -S discord-ptb)
-
+ 
 Step 2: Enable Console (DevTools)
 
 1.  Completely exit Discord PTB:
