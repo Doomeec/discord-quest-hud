@@ -150,7 +150,7 @@ of Service. Use at your own discretion.
 
 ---
 
-# 🎮 Discord Quest Control Panel (HUD & Automation) (гайд для русскоговорящих)
+# 🎮 Discord Quest Control Panel (HUD & Automation) (гайд для русскоязычных)
 
 Модульный и многофункциональный оверлей (HUD) и инструмент автоматизации для прохождения Discord Quests с интерактивной визуализацией, настраиваемыми макетами, звуковыми эффектами и кибер-голосовым сопровождением.
 
