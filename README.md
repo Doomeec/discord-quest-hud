@@ -1,4 +1,7 @@
-
+> [!NOTE]
+> **🚀 v1.1 Update Released (Bugfixes & Stability)**
+> Fixed background & donate GIFs, collapsed-to-expanded transitions across all shapes, UI/theme glitches, and quest automation reliability.
+> [Read full changelog →](https://github.com/Doomeec/discord-quest-hud/releases/tag/v1.1)
 
 # 🎮 Discord Quest Control Panel (HUD & Automation)
 
